@@ -1,1 +1,185 @@
-PARTE1_MARCADOR
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marichal Electrical Services — Electricistas en Puerto Rico</title>
+<meta name="description" content="Marichal Electrical Services. Paneles, breakers, alambrado y emergencias eléctricas en Puerto Rico. 787-405-7900.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<canvas id="topoCanvas" class="topo" aria-hidden="true"></canvas>
+
+<div class="intro" id="intro">
+  <div class="intro-inner">
+    <svg class="intro-bolt" viewBox="0 0 24 24" fill="none"><path d="M13 2 L4 14 h6 l-1 8 9-12 h-6 z" fill="#E10600"/></svg>
+    <div class="intro-count" id="introCount">0</div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo" data-scroll>
+    <img src="assets/logo-transparent.png" alt="Marichal Electrical Services">
+  </a>
+  <nav class="nav-links">
+    <a href="#trabajos" data-scroll><span class="roll"><span class="roll-in"><span>Trabajos</span><span aria-hidden="true">Trabajos</span></span></span></a>
+    <a href="#servicios" data-scroll><span class="roll"><span class="roll-in"><span>Servicios</span><span aria-hidden="true">Servicios</span></span></span></a>
+    <a href="#contacto" data-scroll><span class="roll"><span class="roll-in"><span>Contacto</span><span aria-hidden="true">Contacto</span></span></span></a>
+  </nav>
+  <a class="nav-cta" href="tel:+17874057900">
+    <span class="roll"><span class="roll-in"><span>⚡ 787·405·7900</span><span aria-hidden="true">Llama ya →</span></span></span>
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Menú"><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#trabajos" data-scroll>Trabajos</a>
+  <a href="#servicios" data-scroll>Servicios</a>
+  <a href="#contacto" data-scroll>Contacto</a>
+  <a href="tel:+17874057900" class="mm-phone">⚡ 787·405·7900</a>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-brandline mono">
+      <span>Puerto Rico — Residencial · Comercial</span>
+      <span>Est. con estándar propio</span>
+    </div>
+
+    <h1 class="hero-title" id="heroTitle" aria-label="Marichal">
+      <span>M</span><span>A</span><span>R</span><span>I</span><span>C</span><span>H</span><span>A</span><span>L</span>
+    </h1>
+
+    <div class="hero-sub">
+      <span class="hero-sub-serif">electrical</span>
+      <span class="hero-sub-sans">SERVICES</span>
+    </div>
+
+    <div class="hero-card">
+      <p class="mono">Emergencia activa</p>
+      <div class="hero-card-inner">
+        <p class="hero-card-big">24/7</p>
+        <p class="mono">787·405·7900<br>respuesta mismo día</p>
+      </div>
+    </div>
+
+    <p class="hero-hint mono">Scroll para conectar ↓</p>
+  </section>
+
+  <section class="manifesto" id="nosotros">
+    <div class="manifesto-badge mono">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M13 2 L4 14 h6 l-1 8 9-12 h-6 z" fill="#ffd400"/></svg>
+      <span>El estándar Marichal</span>
+    </div>
+    <p class="manifesto-text" id="manifestoText">
+      <em>Redefiniendo</em> el oficio eléctrico, <em>peleando</em> por cada detalle, dándolo todo en cada instalación. Definiendo un <em>legado</em> dentro y fuera de la obra.
+    </p>
+  </section>
+
+  <section class="campo" id="trabajos">
+    <p class="mono campo-tag">En el campo — trabajos reales</p>
+
+    <div class="campo-stage">
+      <figure class="foto f1"><img src="assets/work/panel-breakers.jpg" alt=""><figcaption class="mono">Panel de breakers · Residencial</figcaption></figure>
+      <figure class="foto f2 duo"><img src="assets/work/conduit-duo.jpg" alt=""><figcaption class="mono">Tubería conduit · Empotrada</figcaption></figure>
+      <figure class="foto f3"><img src="assets/work/subpanel.jpg" alt=""><figcaption class="mono">Subpanel instalado · San Juan</figcaption></figure>
+      <figure class="foto f4 duo"><img src="assets/work/calentador-duo.jpg" alt=""><figcaption class="mono">Calentador eléctrico · 240V</figcaption></figure>
+      <figure class="foto f5"><img src="assets/work/alambrado.jpg" alt=""><figcaption class="mono">Alambrado nuevo · En progreso</figcaption></figure>
+      <figure class="foto f6 duo"><img src="assets/work/breaker-duo.jpg" alt=""><figcaption class="mono">Breaker principal · 100A</figcaption></figure>
+
+      <blockquote class="campo-quote">
+        <p>La electricidad no perdona atajos. Cada panel que toco queda seguro, cada cable que corro queda limpio.</p>
+        <span class="campo-sig">Jesus G. Marichal</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="marquee-band red">
+    <div class="marquee" id="marquee2">
+      <div class="marquee-track">
+        <span>Marichal</span><i>⚡</i><em>electrical</em><i>⚡</i><span>Services</span><i>⚡</i>
+        <span>Marichal</span><i>⚡</i><em>electrical</em><i>⚡</i><span>Services</span><i>⚡</i>
+      </div>
+    </div>
+  </div>
+
+  <section class="servicios" id="servicios">
+    <div class="section-head">
+      <p class="mono">Qué hacemos</p>
+      <h2 class="section-title">Servi<em>cios</em></h2>
+    </div>
+    <div class="serv-grid">
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/panel-breakers.jpg" alt="">
+        <p class="serv-cell-name">Paneles y breakers <span>01</span></p>
+      </a>
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/alambrado.jpg" alt="">
+        <p class="serv-cell-name">Alambrado nuevo <span>02</span></p>
+      </a>
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/conduit.jpg" alt="">
+        <p class="serv-cell-name">Conduit y canalización <span>03</span></p>
+      </a>
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/calentador.jpg" alt="">
+        <p class="serv-cell-name">Calentadores <span>04</span></p>
+      </a>
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/subpanel.jpg" alt="">
+        <p class="serv-cell-name">Subpaneles <span>05</span></p>
+      </a>
+      <a class="serv-cell" href="tel:+17874057900">
+        <img src="assets/work/breaker-100a.jpg" alt="">
+        <p class="serv-cell-name">Emergencias 24/7 <span>06</span></p>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer-wrap" id="contacto">
+    <div class="footer-panel">
+      <div class="footer-tagline">
+        <span class="footer-sig">Jesus G. Marichal</span>
+        <h2>SIEMPRE<br>DANDO <em>CORRIENTE</em>.</h2>
+      </div>
+      <img class="footer-mark" src="assets/logo-dark.jpg" alt="Marichal Electrical Services">
+
+      <div class="footer-nav">
+        <div>
+          <p class="mono">Páginas</p>
+          <a href="#top" data-scroll>Inicio</a>
+          <a href="#trabajos" data-scroll>Trabajos</a>
+          <a href="#servicios" data-scroll>Servicios</a>
+        </div>
+        <div>
+          <p class="mono">Síguenos</p>
+          <a href="https://instagram.com/marichalelectrical" target="_blank" rel="noopener">Instagram</a>
+          <a href="tel:+17874057900">Teléfono</a>
+        </div>
+      </div>
+
+      <a class="footer-cta" href="tel:+17874057900">Emergencias y estimados ↗</a>
+
+      <div class="footer-base mono">
+        <span>© 2026 Marichal Electrical Services. Todos los derechos reservados</span>
+        <span>Hecho en PR ⚡</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
